@@ -15,3 +15,5 @@ janela caso selecione "1"
 janela caso selecione "2"
 
 ![unknown (5)](https://user-images.githubusercontent.com/111459606/188939549-d8879a28-9aab-4ca8-95b0-36f44925f127.png)
+
+tudo isso é executado no terminal do VSCode
