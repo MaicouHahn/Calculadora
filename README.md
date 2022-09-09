@@ -1,4 +1,4 @@
-# Calculadora
+# Calculadora no terminal
 Principal : instancia um objeto calculadora
 CalVolumetrica: Calculadora com loop e com metodos para calcular volumes variados 
 CalcBasic: Calculadora simples com as funçoes classicas tambem possui loop e metodos
