@@ -18,19 +18,24 @@ public class CalVolumetrica {
                     System.out.println("\n\nCalculadora de volumes\nQual volume deseja calcular?\n1- Cilindro\n2- Paralelepipedo\n3- Esfera\n4- Semi Esfera\n5- Cubo\n6- Cone\n7- Piramide\n8- Tronco de Cone\n9- Tronco de Piramide\n10- Prisma\n0- Finalizar\n");
                     
                     bt2=scan.nextInt();
-                   
-                    if(bt2==0){//finalizar a calculadora de volume
+
+                    switch(bt2){
+
+                    
+                    case 0://finalizar a calculadora de volume
                         
                         j=true;
-                    }
-                    else if(bt2==1){//cilindro
+                        break;
+                    
+                    case 1://cilindro
                         System.out.println("Digite o raio do cilindro: ");
                         n1=scan.nextDouble();
                         System.out.println("Digite a altura do cilindro: ");
                         n2=scan.nextDouble();
                         System.out.format("Volume do cilindro é: %.2f",cilindro(n1, n2),"\n");
-                    }
-                    else if(bt2==2){//paralelepipedo
+                    break;
+
+                    case 2://paralelepipedo
                         System.out.println("Digite o comprimento do Paralelepipedo: ");
                         n1=scan.nextDouble();
                         System.out.println("Digite a largura do Paralelepipedo: ");
@@ -38,37 +43,43 @@ public class CalVolumetrica {
                         System.out.println("Digite a altura do Paralelepipedo: ");
                         n3=scan.nextDouble();
                         System.out.format("Volume do Paralelepipedo é: %.2f",paralelepipedo(n1, n2, n3),"\n");
-                    }
-                    else if(bt2==3){//esfera
+                    break;
+                    
+                    case 3://esfera
                         System.out.println("Digite o raio da esfera: ");
                         n1=scan.nextDouble();
                         System.out.format("O volume da Esfera é: %.2f",esfera(n1));
-                    }
-                    else if(bt2==4){//semi esfera
+                    break;
+
+                    case 4://semi esfera
                         System.out.println("Digite o raio da Semi Esfera: ");
                         n1=scan.nextDouble();
                         System.out.format("O volume da Semi Esfera é: %.2f",semiEsfera(n1));
-                    }
-                    else if(bt2==5){//cubo
+                    break;
+
+                    case 5://cubo
                         System.out.println("Digite o Lado do cubo: ");
                         n1=scan.nextDouble();
                         System.out.format("O volume do Cubo é: %.2f",cubo(n1));
-                    }
-                    else if(bt2==6){//cone
+                    break;
+
+                    case 6://cone
                         System.out.println("Digite o Raio da Base do Cone: ");
                         n1=scan.nextDouble();
                         System.out.println("Digite a altura do Cone: ");
                         n2=scan.nextDouble();
                         System.out.format("O volume do Cone é: %.2f",cone(n1, n2));
-                    }
-                    else if(bt2==7){//piramide
+                    break;
+
+                    case 7://piramide
                         System.out.println("Digite o Lado da piramide equilatera: ");
                         n1=scan.nextDouble();
                         System.out.println("Digite a altura da piramide: ");
                         n2=scan.nextDouble();
                         System.out.format("O volume da Piramide é: %.2f",piramide(n1, n2));
-                    }
-                    else if(bt2==8){//tronco de cone
+                    break;
+
+                    case 8://tronco de cone
                         System.out.println("Digite o Raio Maior do tronco de Cone: ");
                         n1=scan.nextDouble();
                         System.out.println("Digite o Raio Menor do tronco de Cone: ");
@@ -76,8 +87,9 @@ public class CalVolumetrica {
                         System.out.println("Digite a Altura do tronco de Cone: ");
                         n3=scan.nextDouble();
                         System.out.format("O volume do Tronco de cone é: %.2f",troncodeCone(n1, n2, n3));
-                    }
-                    else if(bt2==9){//tronco de piramide
+                    break;
+
+                    case 9://tronco de piramide
                         System.out.println("Digite a Area da Base Maior: ");
                         n1=scan.nextDouble();
                         System.out.println("Digite a Area da Base Menor: ");
@@ -85,14 +97,21 @@ public class CalVolumetrica {
                         System.out.println("Digite a Altura: ");
                         n3=scan.nextDouble();
                         System.out.format("O volume do Tronco de Piramide é: %.2f",troncodePiramide(n1, n2, n3));
-                    }
-                    else if(bt2==10){//prisma
+                    break;
+
+                    case 10://prisma
                         System.out.println("Digite o lado do Prisma Equilatero: ");
                         n1=scan.nextDouble();
                         System.out.println("Digite a Altura do Prisma: ");
                         n2=scan.nextDouble();
                         System.out.format("O volume do prisma é: %.2f",prisma(n1, n2));
-                    }
+                    break;
+                    
+                    default:
+                    System.out.println("Função invalida");
+    
+                
+                }
                 }
     
             }
